@@ -16,7 +16,7 @@
 <header class="lido-header">
 <nav class="lido-nav">
 <div class="lido-logo">li<span>d</span>o</div>
-<button class="nav-btn">entrar</button>
+<button class="nav-btn" onclick="location.href='#login'">entrar</button>
 </nav>
 </header>
 
@@ -26,7 +26,7 @@
 <h1>registre o que você leu.<br><em>guarde o que sentiu.</em></h1>
 <p class="hero-desc">Uma plataforma pessoal para catalogar livros, guardar sinopses e registrar sua opinião sobre cada obra que passou pelas suas mãos.</p>
 <div class="hero-cta">
-    <button class="btn-primary">criar minha estante</button>
+    <button class="btn-primary" onclick="location.href='#signup'">criar minha estante</button>
     <button class="btn-ghost">ver como funciona →</button>
 </div>
 </section>
@@ -99,6 +99,53 @@
     </div>
 </div>
 </section>
+
+<!-- LOGIN -->
+<section id="login" class="login-section">
+  <form action="" method="get" class="form-section">
+    <div class="form-login">
+      <label for="email-login">email: </label>
+      <input type="email" name="email" id="email-login" required />
+    </div>
+    <div class="form-login">
+      <label for="password-login">senha: </label>
+      <input type="password" name="password" id="password-login" required />
+    </div>
+  </form>
+  <div class="send-login">
+    <button class="btn">ver minha estante</button>
+  </div>
+</section>
+
+<!-- SIGNUP -->
+<section id="signup" class="signup-section">
+  <form action="" method="get" class="form-section">
+    <div class="form-register">
+      <label for="fullname">nome: </label>
+      <input type="text" name="fullname" id="fullname" required />
+    </div>
+    <div class="form-register">
+      <label for="birthdate">data de nascimento: </label>
+      <input type="date" name="birthdate" id="birthdate" required />
+    </div>
+    <div class="form-register">
+      <label for="email-register">email: </label>
+      <input type="email" name="email" id="email-register" required />
+    </div>
+    <div class="form-register">
+      <label for="password-register">senha: </label>
+      <input type="password" name="password" id="password-register" required />
+    </div>
+    <div class="form-register">
+      <label for="confirm-password">confirme sua senha: </label>
+      <input type="password" name="confirm_password" id="confirm-password" required />
+    </div>
+  </form>
+  <div class="send-register">
+    <button class="btn">criar minha estante</button>
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer>

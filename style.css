@@ -329,6 +329,100 @@ body {
     color: var(--orange-light);
 }
 
+/* ─── LOGIN / INSCRIÇÃO ──────────────────────── */
+.login-section,
+.login-inscription {
+    border-top: 1px solid var(--border);
+    padding: 5rem 1.5rem;
+}
+
+.login-section {
+    background: var(--cream);
+}
+
+.signup-section {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.form-section {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-login,
+.form-register {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-login label,
+.form-register label {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--ink-light);
+}
+
+.form-login input,
+.form-register input {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.form-login input:focus,
+.form-register input:focus {
+    border-color: var(--orange);
+}
+
+.send-login,
+.send-register {
+    max-width: var(--max);
+    margin: 1.75rem auto 0;
+}
+
+.send-login .btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 18px;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--border);
+    background: var(--orange-light);
+    color: var(--orange);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.send-login .btn:hover { background: var(--orange); color: var(--orange-light); }
+
+.send-register .btn {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 11px 26px;
+    border-radius: var(--radius-pill);
+    border: none;
+    background: var(--orange);
+    color: var(--orange-light);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.send-register .btn:hover { background: var(--ink-mid); transform: translateY(-1px); }
+
 /* ─── FOOTER ─────────────────────────────────── */
 footer {
     padding: 2rem 1.5rem;
