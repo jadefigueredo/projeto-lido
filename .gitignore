@@ -3,3 +3,28 @@ Open_Sans/
 *.woff2
 *.ttf
 organizacao.md
+
+/vendor/
+composer.json
+composer.lock
+
+# credenciais e config sensível
+api/db.php
+api/config.php
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+
+# logs PHP
+*.log
+
+# uploads de usuário
+/uploads/
+
+# cache e sessões
+/cache/
+/tmp/
